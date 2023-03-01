@@ -9,7 +9,7 @@ public class FourthTask {
         System.out.print("Введіть символ: ");
         char ch = input.next().toLowerCase().charAt(0); // переводимо символ до нижнього регістру
 
-        String[] words = text.split("[\\s,.!?]+"); // розділяємо текст на слова
+        String[] words = text.split("\\W+"); // розділяємо текст на слова
 
         // знаходимо максимальну кількість входжень символу в слова
         int maxCount = 0;
