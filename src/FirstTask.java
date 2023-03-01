@@ -23,5 +23,14 @@ public class FirstTask {
         double doubleB = (double) intB;
         double result2 = doubleA / (Math.pow(doubleB, 2) - 2) + doubleB / (Math.pow(doubleA, 2) + 2);
         System.out.println("Result: " + result2);
+
+        // Обчислення виразу для дійсних чисел з перетворенням в ціле число
+        System.out.println("3. Convert double to int and calculate");
+        System.out.print("Enter a: ");
+        double a3 = scanner.nextDouble();
+        System.out.print("Enter b: ");
+        double b3 = scanner.nextDouble();
+        int result3 = (int) (a3 / (Math.pow(b3, 2) - 2) + b3 / (Math.pow(a3, 2) + 2)); // перетворення дійсного числа у ціле
+        System.out.println("Result: " + result3);
     }
 }
